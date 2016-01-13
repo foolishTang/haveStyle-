@@ -346,7 +346,6 @@
 		8DD74A771C45D88400779E2E /* LGHomePayHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD74A6E1C45D88400779E2E /* LGHomePayHttpTool.m */; };
 		8DD74A781C45D88400779E2E /* LGHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD74A701C45D88400779E2E /* LGHTTPTool.m */; };
 		8DD74A7C1C45F2CA00779E2E /* LGToPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD74A7A1C45F2CA00779E2E /* LGToPayViewController.m */; };
-		8DD74A7D1C45F2CA00779E2E /* LGToPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD74A7B1C45F2CA00779E2E /* LGToPayViewController.xib */; };
 		8DD74A801C45F6A600779E2E /* LGToBuyToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD74A7F1C45F6A600779E2E /* LGToBuyToolBar.m */; };
 		8DE9C0BB1C3CAC04003B2A8B /* LGHomeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C0BA1C3CAC04003B2A8B /* LGHomeWebViewController.m */; };
 		8DE9C0C41C3CB1C2003B2A8B /* LGADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C0C31C3CB1C2003B2A8B /* LGADCollectionViewCell.m */; };
@@ -1015,7 +1014,6 @@
 		8DD74A701C45D88400779E2E /* LGHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHTTPTool.m; sourceTree = "<group>"; };
 		8DD74A791C45F2CA00779E2E /* LGToPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGToPayViewController.h; sourceTree = "<group>"; };
 		8DD74A7A1C45F2CA00779E2E /* LGToPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGToPayViewController.m; sourceTree = "<group>"; };
-		8DD74A7B1C45F2CA00779E2E /* LGToPayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGToPayViewController.xib; sourceTree = "<group>"; };
 		8DD74A7E1C45F6A600779E2E /* LGToBuyToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGToBuyToolBar.h; sourceTree = "<group>"; };
 		8DD74A7F1C45F6A600779E2E /* LGToBuyToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGToBuyToolBar.m; sourceTree = "<group>"; };
 		8DE9C0BA1C3CAC04003B2A8B /* LGHomeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHomeWebViewController.m; sourceTree = "<group>"; };
@@ -2142,7 +2140,6 @@
 				8D88B8D71C44A4C4005ED343 /* LGLeftTableViewController.xib */,
 				8DD74A791C45F2CA00779E2E /* LGToPayViewController.h */,
 				8DD74A7A1C45F2CA00779E2E /* LGToPayViewController.m */,
-				8DD74A7B1C45F2CA00779E2E /* LGToPayViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2892,7 +2889,6 @@
 				8D351D0F1C338AE100066DE7 /* home_normal@2x.png in Resources */,
 				8D351D111C338AE100066DE7 /* login_icon_pwd.png in Resources */,
 				8D0FFEFD1C411619004D8E57 /* README.txt in Resources */,
-				8DD74A7D1C45F2CA00779E2E /* LGToPayViewController.xib in Resources */,
 				8D351DBD1C33A08D00066DE7 /* heart400.png in Resources */,
 				8D351C981C3381D600066DE7 /* Images.xcassets in Resources */,
 				8D351D101C338AE100066DE7 /* home_pressed@2x.png in Resources */,
@@ -3347,6 +3343,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/Infomation(消息)/XMPP/Vendor/libidn",
 					"$(PROJECT_DIR)/App/Main/Library/扫一扫",
+					"$(PROJECT_DIR)/App/Main/Library/alipay",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3376,6 +3373,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/Infomation(消息)/XMPP/Vendor/libidn",
 					"$(PROJECT_DIR)/App/Main/Library/扫一扫",
+					"$(PROJECT_DIR)/App/Main/Library/alipay",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

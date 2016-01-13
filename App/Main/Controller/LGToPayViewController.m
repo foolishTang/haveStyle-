@@ -10,6 +10,8 @@
 
 @interface LGToPayViewController ()
 
+@property (weak , nonatomic)UITableView *tableView;
+
 @end
 
 @implementation LGToPayViewController
@@ -17,21 +19,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [button setTitle:@"支付" forState:UIControlStateNormal];
+//    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//获取15位随机数
+-(NSString *)generateTradeNO
+{
+    const int N =15;
+    NSString * sourceString=@"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    NSMutableString *re=[[NSMutableString alloc]init];
+    srand((int)time(0));
+    for (int i=0; i<N; i++) {
+        unsigned index=rand()%[sourceString length];
+        NSString * s=[sourceString substringWithRange:NSMakeRange(index, 1)];
+        [re appendString:s];
+    }
+    return re;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

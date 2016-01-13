@@ -55,10 +55,11 @@
     UILabel *price = [[UILabel alloc]init];
     price.font = [UIFont systemFontOfSize:18];
 //    price.backgroundColor = [UIColor blackColor];
-    self.allPrice = price;
-    price.textColor = [UIColor blackColor];
-    
+//    price.textColor = [UIColor redColor];
+    price.text = @"共0元";
     [self addSubview:price];
+    self.allPrice = price;
+    
     UILabel *label = [[UILabel alloc]init];
     self.allSelectLabel = label;
     label.text = @"全选";
@@ -94,16 +95,26 @@
         button.selected = !button.selected;
         if (button.selected == YES) {
             button.backgroundColor =[UIColor redColor];
+            [self.delegate calculateAllMoney:YES];
         }else{
+            [self.delegate calculateAllMoney:NO];
             button.backgroundColor = [UIColor cyanColor];
+            self.allPrice.text = @"共0元";
         }
     }
     if (button.tag == 1) {
         if ([self.delegate respondsToSelector:@selector(toBayViewController)]) {
             [self.delegate toBayViewController];
+            
         }
         
     }
+}
+
+-(void)setAllMoney:(NSInteger )allMoney
+{
+    self.allPrice.text = [NSString stringWithFormat:@"共%ld元",allMoney];
+    _allMoney = allMoney;
 }
 
 -(void)layoutSubviews
@@ -116,11 +127,22 @@
     CGFloat  topH = itemH;
     self.serviceBtn.frame = CGRectMake(topX, topY, topW, topH);
     
+    
+    
+    
     CGFloat  addX = self.width-80;
     CGFloat  addY = 10;
     CGFloat  addW = 80;
     CGFloat  addH = 29;
     self.addBtn.frame = CGRectMake(addX, addY, addW, addH);
+    
+    CGFloat  allPriceX = self.width-180;
+    CGFloat  allPriceY = 14;
+    CGFloat  allPriceW = 100;
+    CGFloat  allPriceH = 20;
+    self.allPrice.frame = CGRectMake(allPriceX, allPriceY, allPriceW, allPriceH);
+    
+    
     
     CGFloat  allSelectX = CGRectGetMaxX(self.serviceBtn.frame)+15;
     CGFloat  allSelectY = 10;

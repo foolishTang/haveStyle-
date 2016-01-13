@@ -12,9 +12,12 @@
 
 -(void)toBayViewController;
 
+-(void)calculateAllMoney:(BOOL)allOrZero;
 @end
 
 @interface LGToBuyToolBar : UIView
+
+@property (assign , nonatomic)NSInteger allMoney;
 
 @property (weak , nonatomic)id<LGToBuyToolBarDelegate> delegate;
 

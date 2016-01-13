@@ -11,5 +11,6 @@
 @interface LGFavoTableViewCell : UITableViewCell
 
 @property (strong , nonatomic)Clsinfo *model;
+@property (assign , nonatomic )BOOL LGSelect;
 
 @end

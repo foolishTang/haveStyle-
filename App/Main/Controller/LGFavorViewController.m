@@ -23,7 +23,8 @@
 @property (weak , nonatomic)UITableView *tableView;
 @property (strong , nonatomic)LGHomeDataTool *tool;
 @property (strong , nonatomic)NSArray *favoArr;
-
+@property (weak , nonatomic)LGToBuyToolBar *toolBar;
+@property (assign , nonatomic)BOOL change;
 @end
 
 @implementation LGFavorViewController
@@ -51,6 +52,7 @@
     LGToBuyToolBar *toolBar = [LGToBuyToolBar toBayToolBar];
     toolBar.delegate = self;
     [self.view addSubview:toolBar];
+    self.toolBar  = toolBar;
 }
 #pragma mark- 获取数据
 -(void)getInfoFromDatabase
@@ -72,6 +74,7 @@
         cell = [[LGFavoTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"LGFavoTableViewCell"];
     }
     cell.model = self.favoArr[indexPath.row];
+    cell.LGSelect = self.change;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -95,5 +98,23 @@
 {
     LGToPayViewController *toPay = [[LGToPayViewController alloc]initWithNibName:@"LGToPayViewController" bundle:nil];
     [self.navigationController pushViewController:toPay animated:YES];
+}
+-(void)calculateAllMoney:(BOOL)allOrZero
+{
+    if (allOrZero) {
+        self.change = YES;
+        [self.tableView reloadData];
+        NSInteger num = 0;
+        for (Clsinfo *model in self.favoArr) {
+            NSString *numstr = [model.sale_price substringFromIndex:1];
+            num = num+[numstr intValue]*model.number;
+        }
+        self.toolBar.allMoney = num;
+    }
+    else{
+        self.change = NO;
+        [self.tableView reloadData];
+    }
+    
 }
 @end
