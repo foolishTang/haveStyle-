@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGLeftTableViewController">
+            <connections>
+                <outlet property="iconImageView" destination="DHR-5e-Knp" id="6IB-Aa-PQ1"/>
+                <outlet property="scanButton" destination="rlR-Eu-06m" id="nDN-pO-DXW"/>
+                <outlet property="view" destination="LnB-Od-R59" id="dZC-Ft-ejO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LnB-Od-R59">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DHR-5e-Knp">
+                    <rect key="frame" x="8" y="28" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Fqg-KC-fkM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="just do it follow heard!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn0-8B-Qa6">
+                    <rect key="frame" x="86" y="34" width="192" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQT-TV-A43">
+                    <rect key="frame" x="32" y="116" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="我的范票">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59O-Ko-VDc">
+                    <rect key="frame" x="32" y="344" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="联系客服">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gik-Gs-sfj">
+                    <rect key="frame" x="32" y="154" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="兑换码">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wte-F6-Ztk">
+                    <rect key="frame" x="32" y="268" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="测型值">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNt-UJ-xzU">
+                    <rect key="frame" x="32" y="192" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="我的收藏">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlR-Eu-06m">
+                    <rect key="frame" x="32" y="230" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="扫一扫">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="scanBtnClick:" destination="-1" eventType="touchUpInside" id="83f-0n-fWV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9T-xW-8qB">
+                    <rect key="frame" x="32" y="530" width="30" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="设置">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1q-FC-31R">
+                    <rect key="frame" x="32" y="306" width="272" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="我的订单">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="trailing" secondItem="59O-Ko-VDc" secondAttribute="trailing" id="048-1a-5Ev"/>
+                <constraint firstItem="Fn0-8B-Qa6" firstAttribute="leading" secondItem="DHR-5e-Knp" secondAttribute="trailing" constant="8" symbolic="YES" id="4Kd-5F-oxI"/>
+                <constraint firstAttribute="trailing" secondItem="xQT-TV-A43" secondAttribute="trailing" constant="16" id="5bZ-NC-oos"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="top" secondItem="DHR-5e-Knp" secondAttribute="bottom" constant="18" id="8NQ-6C-Hws"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="Wte-F6-Ztk" secondAttribute="leading" id="8gZ-wF-WqL"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="top" secondItem="Fn0-8B-Qa6" secondAttribute="bottom" constant="56" id="DIv-9d-KzR"/>
+                <constraint firstItem="Wte-F6-Ztk" firstAttribute="top" secondItem="rlR-Eu-06m" secondAttribute="bottom" constant="14" id="DyT-Vm-NZp"/>
+                <constraint firstItem="KNt-UJ-xzU" firstAttribute="top" secondItem="gik-Gs-sfj" secondAttribute="bottom" constant="18" id="GNS-aq-sep"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="trailing" secondItem="KNt-UJ-xzU" secondAttribute="trailing" id="HE6-N7-lCZ"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="trailing" secondItem="Wte-F6-Ztk" secondAttribute="trailing" id="Ivd-SS-lBv"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="trailing" secondItem="M1q-FC-31R" secondAttribute="trailing" id="KjR-it-eFd"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="trailing" secondItem="rlR-Eu-06m" secondAttribute="trailing" id="L6L-oq-tnS"/>
+                <constraint firstItem="DHR-5e-Knp" firstAttribute="leading" secondItem="LnB-Od-R59" secondAttribute="leadingMargin" id="LTp-2u-mwH"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="gik-Gs-sfj" secondAttribute="leading" id="VgG-Ht-pmL"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="top" secondItem="LnB-Od-R59" secondAttribute="top" constant="116" id="duK-ed-MzG"/>
+                <constraint firstItem="59O-Ko-VDc" firstAttribute="top" secondItem="M1q-FC-31R" secondAttribute="bottom" constant="8" symbolic="YES" id="eYy-vC-Mlz"/>
+                <constraint firstAttribute="trailing" secondItem="Fn0-8B-Qa6" secondAttribute="trailing" constant="42" id="exz-HB-iiB"/>
+                <constraint firstItem="Fn0-8B-Qa6" firstAttribute="top" secondItem="LnB-Od-R59" secondAttribute="top" constant="34" id="f1q-9V-hHA"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="LnB-Od-R59" secondAttribute="leading" constant="32" id="faJ-Re-3wU"/>
+                <constraint firstItem="rlR-Eu-06m" firstAttribute="top" secondItem="KNt-UJ-xzU" secondAttribute="bottom" constant="8" symbolic="YES" id="gfk-Ln-HJ2"/>
+                <constraint firstItem="gik-Gs-sfj" firstAttribute="top" secondItem="xQT-TV-A43" secondAttribute="bottom" id="hfR-Fd-OS2"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="M1q-FC-31R" secondAttribute="leading" id="m6S-Cf-gRp"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="trailing" secondItem="gik-Gs-sfj" secondAttribute="trailing" id="oOu-yR-PiF"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="KNt-UJ-xzU" secondAttribute="leading" id="siR-dw-OMN"/>
+                <constraint firstItem="M1q-FC-31R" firstAttribute="top" secondItem="rlR-Eu-06m" secondAttribute="bottom" constant="41" id="tH6-na-mC5"/>
+                <constraint firstItem="DHR-5e-Knp" firstAttribute="top" secondItem="LnB-Od-R59" secondAttribute="top" constant="28" id="wCn-J8-2ni"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="rlR-Eu-06m" secondAttribute="leading" id="whF-tF-WLK"/>
+                <constraint firstItem="xQT-TV-A43" firstAttribute="leading" secondItem="59O-Ko-VDc" secondAttribute="leading" id="yU1-Yq-AJA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="56" y="319"/>
+        </view>
+    </objects>
+</document>

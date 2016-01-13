@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KIM-7k-Gcb" customClass="LGPayBrandCell">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KIM-7k-Gcb" id="A4C-I7-E6l">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-m8-RZa">
+                        <rect key="frame" x="8" y="8" width="88" height="87.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="lB3-4X-79J"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="进入品牌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1o1-CM-Kru">
+                        <rect key="frame" x="380" y="35" width="68" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="3vI-or-tkr"/>
+                            <constraint firstAttribute="height" constant="29" id="8pp-cJ-N8o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsw-v5-prh">
+                        <rect key="frame" x="104" y="38" width="156" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="JGG-fV-B65"/>
+                            <constraint firstAttribute="width" constant="156" id="Ufx-Ph-RLK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zsw-v5-prh" firstAttribute="leading" secondItem="QXb-m8-RZa" secondAttribute="trailing" constant="15" id="5xZ-xM-5fr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QXb-m8-RZa" secondAttribute="bottom" constant="-2.5" id="fvy-T8-sEf"/>
+                    <constraint firstItem="QXb-m8-RZa" firstAttribute="leading" secondItem="A4C-I7-E6l" secondAttribute="leadingMargin" constant="-3" id="iVq-dZ-JYD"/>
+                    <constraint firstItem="zsw-v5-prh" firstAttribute="top" secondItem="A4C-I7-E6l" secondAttribute="topMargin" constant="8" id="kQ2-Km-d1c"/>
+                    <constraint firstItem="1o1-CM-Kru" firstAttribute="trailing" secondItem="A4C-I7-E6l" secondAttribute="trailingMargin" id="m9N-eh-7OT"/>
+                    <constraint firstItem="QXb-m8-RZa" firstAttribute="top" secondItem="A4C-I7-E6l" secondAttribute="topMargin" constant="-3" id="mgS-cg-3jn"/>
+                    <constraint firstItem="1o1-CM-Kru" firstAttribute="top" secondItem="A4C-I7-E6l" secondAttribute="topMargin" constant="16" id="o9k-ne-nYC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="brandImage" destination="QXb-m8-RZa" id="0oJ-iW-C0W"/>
+                <outlet property="brandLabel" destination="zsw-v5-prh" id="Phd-43-MS5"/>
+            </connections>
+            <point key="canvasLocation" x="274" y="224"/>
+        </tableViewCell>
+    </objects>
+</document>
