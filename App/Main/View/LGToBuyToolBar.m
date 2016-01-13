@@ -51,6 +51,14 @@
     self.addBtn.backgroundColor = [UIColor blackColor];
     [self.addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
+    
+    UILabel *price = [[UILabel alloc]init];
+    price.font = [UIFont systemFontOfSize:18];
+//    price.backgroundColor = [UIColor blackColor];
+    self.allPrice = price;
+    price.textColor = [UIColor blackColor];
+    
+    [self addSubview:price];
     UILabel *label = [[UILabel alloc]init];
     self.allSelectLabel = label;
     label.text = @"全选";
